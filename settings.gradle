@@ -1,1 +1,5 @@
-include ':app', ':automator', ':common', ':autojs', ':inrt'
+include   ':common'
+include  ':automator'
+include  ':autojs'
+include   ':inrt'
+include ':app'
