@@ -8,6 +8,9 @@ buildscript {
         gradlePluginPortal()
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
         jcenter()
         maven { url 'https://maven.aliyun.com/repository/public' }
     }
@@ -20,6 +23,9 @@ buildscript {
 
 allprojects {
     repositories {
+        flatDir {
+            dirs 'libs'
+        }
         mavenCentral()
         google()
         maven {
