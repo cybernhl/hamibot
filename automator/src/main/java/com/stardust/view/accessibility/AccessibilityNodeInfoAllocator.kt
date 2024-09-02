@@ -84,7 +84,7 @@ open class AccessibilityNodeInfoAllocator {
                 key.recycle()
                 notRecycledCount++
                 if (DEBUG)
-                    Log.w(TAG, value)
+                    Log.w(TAG, value.toString())//FIXME
             } catch (ignored: IllegalStateException) {
             }
 
@@ -181,6 +181,4 @@ open class AccessibilityNodeInfoAllocator {
             }
         }
     }
-
-
 }
